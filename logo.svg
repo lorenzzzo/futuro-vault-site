@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <!--
+    The Pattern — logo
+    9-node graph with all-seeing eye
+    Node positions (center=50,50, outer_r=42):
+      0:(50,8)  1:(77,17.8)  2:(91.4,42.7)  3:(86.4,71)  4:(64.4,89.5)
+      5:(35.6,89.5)  6:(13.6,71)  7:(8.6,42.7)  8:(23,17.8)
+  -->
+
+  <!-- Outer nonagon -->
+  <polygon
+    stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"
+    points="50,8 77,17.8 91.4,42.7 86.4,71 64.4,89.5 35.6,89.5 13.6,71 8.6,42.7 23,17.8"/>
+
+  <!-- Inner triangles (skip-3): three overlapping equilateral triangles -->
+  <polygon stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"
+    points="50,8 86.4,71 13.6,71"/>
+  <polygon stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"
+    points="77,17.8 64.4,89.5 8.6,42.7"/>
+  <polygon stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"
+    points="91.4,42.7 35.6,89.5 23,17.8"/>
+
+  <!-- Eye — outer almond outline -->
+  <path stroke="currentColor" stroke-width="2.8" stroke-linecap="round"
+    d="M 26,50 Q 50,34 74,50 Q 50,66 26,50 Z"/>
+
+  <!-- Eye — inner almond outline -->
+  <path stroke="currentColor" stroke-width="2" stroke-linecap="round"
+    d="M 30.5,50 Q 50,38 69.5,50 Q 50,62 30.5,50 Z"/>
+
+  <!-- Eye — iris with crescent pupil (evenodd: iris filled, upper-right cutout) -->
+  <path fill="currentColor" fill-rule="evenodd" d="
+    M 50,40 A 10,10 0 1,0 50,60 A 10,10 0 1,0 50,40 Z
+    M 53.5,43 A 7,7 0 1,0 53.5,57 A 7,7 0 1,0 53.5,43 Z
+  "/>
+
+  <!-- 9 node circles (drawn last, on top of lines) -->
+  <g fill="currentColor">
+    <circle cx="50"   cy="8"    r="4.6"/>
+    <circle cx="77"   cy="17.8" r="4.6"/>
+    <circle cx="91.4" cy="42.7" r="4.6"/>
+    <circle cx="86.4" cy="71"   r="4.6"/>
+    <circle cx="64.4" cy="89.5" r="4.6"/>
+    <circle cx="35.6" cy="89.5" r="4.6"/>
+    <circle cx="13.6" cy="71"   r="4.6"/>
+    <circle cx="8.6"  cy="42.7" r="4.6"/>
+    <circle cx="23"   cy="17.8" r="4.6"/>
+  </g>
+</svg>
